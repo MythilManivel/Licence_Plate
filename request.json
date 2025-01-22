@@ -1,0 +1,8 @@
+{
+    "event": {
+      "token": "TOKEN",  // Replace with the actual token
+      "expectedAction": "REGISTER",  // This matches the action from grecaptcha.execute
+      "siteKey": "6LeEkb0qAAAAAMKm2ymO4ECyJjzhQ8dmgs5_alXZ"
+    }
+  }
+  

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Registration</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f7fa;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1D2A6D, #14016c);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            border-bottom: 4px solid #220365;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            font-weight: 300;
+        }
+
+        /* Form Container */
+        .form-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Input Fields */
+        .input-container {
+            margin-bottom: 20px;
+        }
+
+        .input-container label {
+            font-size: 1.1rem;
+            color: #333;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .input-container input,
+        .input-container textarea {
+            width: 100%;
+            padding: 12px;
+            font-size: 1rem;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            transition: 0.3s ease-in-out;
+        }
+
+        .input-container input:focus,
+        .input-container textarea:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+
+        .input-container textarea {
+            resize: vertical;
+            height: 150px;
+        }
+
+        /* Submit Button */
+        .submit-btn {
+            background-color: #FF5722;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+        }
+
+        .submit-btn:hover {
+            background-color: #e64a19;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            .form-container {
+                padding: 20px;
+            }
+
+            .submit-btn {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vehicle Registration Portal</h1>
+        <p>Register your vehicle quickly and easily with our intuitive system.</p>
+    </header>
+
+    <section class="form-container">
+        <form action="register.php" method="POST" class="registration-form">
+            <div class="input-container">
+                <label for="license_plate">License Plate:</label>
+                <input type="text" id="license_plate" name="license_plate" required placeholder="Enter vehicle's license plate">
+            </div>
+            <div class="input-container">
+                <label for="owner_name">Owner Name:</label>
+                <input type="text" id="owner_name" name="owner_name" required placeholder="Enter full name">
+            </div>
+            <div class="input-container">
+                <label for="phone_number">Phone Number:</label>
+                <input type="tel" id="phone_number" name="phone_number" required placeholder="Enter phone number">
+            </div>
+            <div class="input-container">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required placeholder="Enter full address"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Register Vehicle</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Vehicle Registration. All rights reserved.</p>
+    </footer>
+</body>
+</html>
