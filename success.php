@@ -1,5 +1,4 @@
 <?php
-// Start the session to handle redirection from the register.php
 session_start();
 
 // Check if the registration was successful
@@ -104,3 +103,4 @@ unset($_SESSION['registration_success']);
     </footer>
 </body>
 </html>
+
