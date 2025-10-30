@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-// Check if the registration was successful
 if (!isset($_SESSION['registration_success'])) {
     // If no success flag is set, redirect back to the registration page
     header("Location: register.php");
@@ -102,5 +101,6 @@ unset($_SESSION['registration_success']);
     </footer>
 </body>
 </html>
+
 
 
