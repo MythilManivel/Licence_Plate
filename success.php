@@ -8,7 +8,6 @@ if (!isset($_SESSION['registration_success'])) {
     exit();
 }
 
-// Clear the session flag after redirecting to avoid displaying the success message again
 unset($_SESSION['registration_success']);
 ?>
 
@@ -103,4 +102,5 @@ unset($_SESSION['registration_success']);
     </footer>
 </body>
 </html>
+
 
